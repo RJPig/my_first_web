@@ -1,13 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-pre {
-    color: rgb(255, 255, 255);
+p {
+    color: khaki;
 }
 h1 {
     color: aqua;
     text-align:center
 }
 h2 {color: hotpink;}
-h3 {color: hotpink;}
-h4 {color: hotpink;}
+h2 {color: hotpink;}
+h2 {color: hotpink;}
 a {color: #F4060A}
