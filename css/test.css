@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 p {
-    color: khaki;
+    color: rgb(1, 159, 180);
 }
 h1 {
     color: aqua;
@@ -10,4 +10,4 @@ h1 {
 h2 {color: hotpink;}
 h2 {color: hotpink;}
 h2 {color: hotpink;}
-a {color: #F4060A}
+a {color: rgb(6, 244, 46)}
