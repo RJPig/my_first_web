@@ -8,6 +8,24 @@ h1 {
     text-align:center
 }
 h2 {color: hotpink;}
-h2 {color: hotpink;}
-h2 {color: hotpink;}
-a {color: rgb(6, 244, 46)}
+header {
+    background-color: #429296;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+aside {
+    line-height: 30px;
+    background-color: #eeeeee;
+    height: 500px;
+    width: 100px;
+    float: left;
+    padding: 15px;
+}
+footer {
+    background-color: #429296;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
