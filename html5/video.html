@@ -7,6 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <video src="e:/BaiduNetdiskDownload/dva.mov" controls width="400px" height="300px" poster="../imgs/希尔薇.jpg"></video>
+    <div id="video">
+        <video id="videos" src="e:/BaiduNetdiskDownload/dva.mov" controls width="640" poster="../imgs/希尔薇.jpg">抱歉,所选视频已找不到资源</video>
+        <p>播放速率:<select id="selRate">
+            <option value="0.5">0.5</option>
+            <option value="1">1</option>
+            <option value="1.25">1.25</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+        </select></p>
+        <button @click="playPause">播放/暂停</button>
+        <button @click="makeBig">放大</button>
+        <button @click="makeSmall">缩小</button>
+        <button @click="makeNormal">正常</button>
+    </div>
+<script src="../js/vue.js"></script>
+<script>
+    const video = new Vue({
+        el: '#video',
+        methods: {
+            playPause: function(){
+                if (videos.paused)
+                    videos.play();
+                else
+                    videos.pause();
+            },
+            makeBig: function(){
+                videos.width = 960;
+            },
+            makeSmall: function(){
+                videos.width = 320;
+            },
+            makeNormal: function(){
+                videos.width = 640;
+            },
+            selRate: function(){
+                videos.playbackRate = this.values;
+            }
+        }
+    })
+</script>
 </body>
 </html>
