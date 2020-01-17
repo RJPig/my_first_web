@@ -19,13 +19,34 @@
             background-color: red;
         }
 
-        button:active {
+        a:link {
+            color:green
+        }
+
+        a:visited {
+            color:red
+        }
+
+        a:hover {
+            color: indigo;
+        }
+
+        a:active {
             color:magenta;
             background-color:mediumaquamarine;
         }
+        
+        input:focus {
+            background-color: darkgreen;
+            outline: none;
+        }
 
+        input:hover {
+            background-color: darksalmon;
+        }
     </style>
+    <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>
+    <input type="text" value="操作变色">
     <div>鼠标移过来</div>
-    <button>点我变色</button>
 </body>
 </html>

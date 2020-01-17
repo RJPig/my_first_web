@@ -34,28 +34,27 @@
 
         span.content{
             color: yellowgreen;
-            padding: 0px;
         }
 
-        h2,p,span {
+        p,span {
             font-style: italic;
         }
 
-        body > .content {
-            border:thin black solid;
-        }
+
 
         p::selection {
-            background-color:magenta;
+            background-color:gray;
             color: lightpink;
         }
+
+
     </style>
 </head>
 <body>
     <h2>乱数假文</h2>
     <p class="expan">由随机字母组合而成的内容</p>
     <p class="content"><span id="ol">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quo atque sed quod maxime? <span class="content">Eligendi</span> odit molestiae similique. Optio commodi animi dolores minus voluptate tenetur ad! Delectus tempore ullam culpa!</p>
-    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro accusamus numquam aliquam neque nostrum voluptas ratione nihil <span class="content">totam</span> voluptatum tempora, dignissimos, animi et recusandae suscipit eius voluptatem corporis ipsam vitae?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ex fugiat in nihil labore porro deserunt eum sed atque non. Corporis unde minima asperiores beatae ducimus iste laborum nesciunt inventore?</p>
+    <p class="content"><span id="ol">Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit. Porro accusamus numquam aliquam neque nostrum voluptas ratione nihil <span class="content">totam</span> voluptatum tempora, dignissimos, animi et recusandae suscipit eius voluptatem corporis ipsam vitae?<span id="ol">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. Maxime ex fugiat in nihil labore porro deserunt eum sed atque non. Corporis unde minima asperiores beatae ducimus iste laborum nesciunt inventore?</p>
     <img src="../imgs/5.jpg" alt="等风吹和我">
     <img src="../imgs/6.jpg" alt="一起调戏方丈">
     <img src="../imgs/7.jpg" alt="互相壁咚">
