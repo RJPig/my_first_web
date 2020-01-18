@@ -19,6 +19,11 @@
             background-color: red;
         }
 
+        a {
+            text-decoration: none;
+            position: relative;
+            left: 50%
+        }
         a:link {
             color:green
         }
@@ -33,20 +38,40 @@
 
         a:active {
             color:magenta;
-            background-color:mediumaquamarine;
         }
-        
-        input:focus {
-            background-color: darkgreen;
+
+        input {
             outline: none;
+        }
+
+        input:disabled {
+            border: solid 1px #dddddd !important
         }
 
         input:hover {
             background-color: darksalmon;
         }
+
+        input:checked+label {
+            color:royalblue;
+        }
+
+        input:required {
+            border: solid 1px red;
+        }
+
+        input:optional {
+            border: solid 1px green;
+        }
     </style>
-    <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>
-    <input type="text" value="操作变色">
-    <div>鼠标移过来</div>
+    <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a><hr>
+    <input type="text" value="失去焦点时变色" required><br>
+    <input type="text"><br>
+    <input type="text" disabled><hr>
+    <input type="radio" name="sex" id="man" checked>
+    <label for="man">男</label>
+    <input type="radio" name="sex" id="woman">
+    <label for="woman">女</label><hr>
+    <div>鼠标移到该位置自动变色</div>
 </body>
 </html>
