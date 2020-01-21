@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+    font: bolder 18px/1.5em 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-color: rgba(245, 134, 240,0.75);
+    text-align: left;
+    padding: 1px;
+}
+
+p {
+    color: rgb(1, 159, 180);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.all>li {
+    display: inline;
+    list-style: none;
+}
+
+.all>li:first-child {
+    font-size: 25px;
+}
+
+
+h2 {
+    color: rgba(240, 0, 135, 1);
+    text-shadow: rgba(250, 0, 180, 0.5) 3px 2px 3px;
+    text-align:left
+}
+
+footer {
+    background-color:white;
+    clear: both;
+    text-align: center;
+    padding: 2px;
+}
