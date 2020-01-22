@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-image: url("../imgs/希尔薇.jpg");
-	background-size: cover
+	background-image: url("../imgs/backgroundimg.jpg");
+	background-size: cover;
 }
