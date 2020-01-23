@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-image: url("../imgs/backgroundimg.jpg");
+	/* 导入图片路径 */
+	background: url("../imgs/backgroundimg.jpg") no-repeat;
+	/* 将图片重复取消
+	background-repeat: no-repeat;
+	图片覆盖*/
 	background-size: cover;
 }
+
