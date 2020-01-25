@@ -6,6 +6,6 @@ body {
 	/* 将图片重复取消
 	background-repeat: no-repeat;
 	图片覆盖*/
-	background-size: cover;
+	background-size: 100% auto;
 }
 
