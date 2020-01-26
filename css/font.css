@@ -19,7 +19,7 @@ a {
 
 div .all>li {
     display: inline-block;
-    list-style: none;
+    list-style-type: none;
 }
 
 div .all>li:hover {
@@ -58,6 +58,7 @@ div details summary {
 
 div details summary:hover {
     background-color: rgba(134, 44, 3, 1);
+    cursor: pointer;
 }
 
 /* 消除summary前的小箭头 */
