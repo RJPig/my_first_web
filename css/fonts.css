@@ -1,0 +1,131 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: url("https://huiji-public.huijistatic.com/xinglugu/uploads/8/85/Stardewbackground.jpg") no-repeat;
+  background-size: cover;
+}
+header .nav-collapse {
+  background-color: #ffffff;
+  height: 50px;
+  overflow: hidden;
+}
+header .nav-collapse .left {
+  float: left;
+}
+header .nav-collapse .left .logo {
+  float: left;
+  background-color: #333333;
+  padding: 0px 9px;
+}
+header .nav-collapse .left .logo img {
+  width: 90px;
+  height: 50px;
+}
+header .nav-collapse .left .list-collapse {
+  background: #333333;
+  float: left;
+}
+header .nav-collapse .left .list-collapse li {
+  display: inline-block;
+}
+header .nav-collapse .left .list-collapse li a {
+  line-height: 50px;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 9px;
+}
+header .nav-collapse .left .list-collapse li:hover {
+  background-color: rgba(17, 17, 17, 0.75);
+}
+header .nav-collapse .search {
+  width: 2000px;
+  display: table-cell;
+  padding: 0px 30px;
+}
+header .nav-collapse .search input {
+  width: 100%;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+}
+header .nav-collapse .right {
+  float: right;
+}
+header .nav-collapse .right a {
+  color: gray;
+  text-decoration: none;
+  line-height: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0px 5px;
+}
+header .nav-pills {
+  background-color: rgba(36, 142, 57, 0.97);
+  overflow: hidden;
+  height: 50px;
+}
+header .nav-pills .list-pills {
+  float: left;
+}
+header .nav-pills .list-pills li {
+  display: inline-block;
+  line-height: 50px;
+}
+header .nav-pills .list-pills li a {
+  color: white;
+  text-decoration: none;
+}
+header .nav-pills .list-pills li:hover {
+  background-color: rgba(19, 112, 25, 0.98);
+}
+header .nav-pills .list-pills .chicken-logo {
+  font-size: 25px;
+  padding: 0px 25px;
+  float: left;
+}
+header .nav-pills .list-pills .chicken-logo img {
+  width: 20px;
+  padding-top: 14px;
+}
+header .nav-pills .list-pills .dropdown {
+  padding: 0px 20px;
+  float: left;
+}
+header .nav-pills .count {
+  float: right;
+  height: 50px;
+}
+header .nav-pills .count p {
+  color: white;
+  padding: 0px 27px;
+}
+header .nav-pills .count p span {
+  padding: 0px 5px;
+  height: 50px;
+  line-height: 50px;
+}
+header .nav-pills .count p span a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+main .artical {
+  width: 800px;
+  overflow: hidden;
+}
+main .artical .artical-left {
+  height: 400px;
+  width: 50%;
+  background-color: red;
+  float: left;
+}
+main .artical .artical-right {
+  height: 400px;
+  width: 50%;
+  background-color: green;
+  float: right;
+}
