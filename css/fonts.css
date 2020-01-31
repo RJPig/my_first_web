@@ -2,9 +2,20 @@
   padding: 0px;
   margin: 0px;
 }
+ul,
+li,
+a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
 body {
   background: url("https://huiji-public.huijistatic.com/xinglugu/uploads/8/85/Stardewbackground.jpg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  position: fixed;
 }
 header .nav-collapse {
   background-color: #ffffff;
@@ -54,6 +65,7 @@ header .nav-collapse .search input {
 }
 header .nav-collapse .right {
   float: right;
+  padding: 0px 15px;
 }
 header .nav-collapse .right a {
   color: gray;
@@ -65,25 +77,21 @@ header .nav-collapse .right a {
 }
 header .nav-pills {
   background-color: rgba(36, 142, 57, 0.97);
-  overflow: hidden;
   height: 50px;
+}
+header .nav-pills ::after {
+  content: "";
+  clear: both;
 }
 header .nav-pills .list-pills {
   float: left;
 }
-header .nav-pills .list-pills li {
-  display: inline-block;
-  line-height: 50px;
-}
-header .nav-pills .list-pills li a {
-  color: white;
-  text-decoration: none;
-}
-header .nav-pills .list-pills li:hover {
+header .nav-pills .list-pills .chicken-logo:hover {
   background-color: rgba(19, 112, 25, 0.98);
 }
 header .nav-pills .list-pills .chicken-logo {
   font-size: 25px;
+  line-height: 50px;
   padding: 0px 25px;
   float: left;
 }
@@ -91,9 +99,48 @@ header .nav-pills .list-pills .chicken-logo img {
   width: 20px;
   padding-top: 14px;
 }
+header .nav-pills .list-pills .attention {
+  float: left;
+  display: block;
+  background-color: #3366cc;
+  font-size: 13px ;
+  color: white;
+  min-width: 40px;
+  line-height: 1.286;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+header .nav-pills .list-pills .attention span:hover {
+  background-color: rgba(51, 102, 240, 0.95);
+  cursor: pointer;
+}
+header .nav-pills .list-pills .dropdown:hover {
+  background-color: rgba(19, 112, 25, 0.98);
+}
+header .nav-pills .list-pills .dropdown:hover .list-childs .list-items {
+  display: block;
+}
 header .nav-pills .list-pills .dropdown {
   padding: 0px 20px;
   float: left;
+  position: relative;
+  line-height: 50px;
+}
+header .nav-pills .list-pills .dropdown .list-childs {
+  position: absolute;
+  background-color: rgba(19, 112, 25, 0.98);
+  left: 0;
+  margin-top: 2px;
+  width: 9em;
+}
+header .nav-pills .list-pills .dropdown .list-childs .list-items {
+  line-height: 30px;
+  padding: 0px 19px;
+  display: none;
+}
+header .nav-pills .list-pills .dropdown .list-childs .list-items:hover {
+  background-color: rgba(36, 142, 57, 0.97);
 }
 header .nav-pills .count {
   float: right;
@@ -110,22 +157,39 @@ header .nav-pills .count p span {
 }
 header .nav-pills .count p span a {
   font-size: 24px;
-  color: white;
-  text-decoration: none;
+}
+main {
+  padding-top: 100px;
 }
 main .artical {
-  width: 800px;
+  width: 970px;
+  height: 1800px;
+  background-color: rgba(4, 13, 13, 0.94);
   overflow: hidden;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
-main .artical .artical-left {
+main .artical .artical-description {
+  background-color: rgba(50, 136, 66, 0.28);
+  margin: 20px 0;
+  color: white;
+}
+main .artical .artical-description .artical-left {
   height: 400px;
   width: 50%;
-  background-color: red;
+  float: left;
+  position: relative;
+}
+main .artical .artical-description .artical-left img {
+  width: 150px;
+  height: 95px;
   float: left;
 }
-main .artical .artical-right {
+main .artical .artical-description .artical-right {
   height: 400px;
   width: 50%;
-  background-color: green;
+  background-color: #227a33;
   float: right;
 }

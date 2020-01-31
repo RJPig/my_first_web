@@ -1,15 +1,22 @@
 * {
+    
     padding: 0px;
     margin : 0px;
+}
+ul,li,a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;    
 }
 
 body {
     background: url("https://huiji-public.huijistatic.com/xinglugu/uploads/8/85/Stardewbackground.jpg") no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
-    
+    position: fixed;
     .nav-collapse {
         background-color: #ffffff;
         height: 50px;
@@ -68,7 +75,7 @@ header {
         .right {
             // background-color: red;
             float:right;
-            
+            padding: 0px 15px;
             a{
                 color:gray;
                 text-decoration: none;
@@ -82,23 +89,22 @@ header {
 
     .nav-pills{
         background-color: rgba(36,142,57,0.97);
-        overflow: hidden;
+        // overflow: hidden;
         height: 50px;
+        // 消除浮动
+        ::after {
+            content: "";
+            clear: both;
+        }
         .list-pills {
-            float: left;
-            li{
-                display: inline-block;
-                line-height: 50px;                
-                a{
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-            li:hover{
+            float: left;           
+            .chicken-logo:hover{
                 background-color: rgba(19,112,25,0.98);
+
             }
             .chicken-logo {
                 font-size: 25px;
+                line-height: 50px;
                 padding: 0px 25px;
                 float: left;
                 img{
@@ -106,9 +112,53 @@ header {
                     padding-top: 14px;
                 }
             }
+
+            .attention {
+                float: left;
+                display: block;    
+                background-color: rgb(51, 102, 204);
+                font-size: 13px ;
+                color: white;
+                min-width: 40px;
+                line-height: 1.286;
+                text-align: center;
+                margin-top: 10px;
+                border-radius: 10%;   
+            }
+            .attention span:hover {
+                background-color: rgba(51,102,240,0.95);
+                cursor: pointer;
+            }
+            .dropdown:hover {
+                background-color: rgba(19,112,25,0.98);
+            }
+            .dropdown:hover {
+                .list-childs {
+                    .list-items {
+                    display: block;
+                    }
+                }
+            }
             .dropdown {
                 padding: 0px 20px;
                 float: left;
+                position: relative;
+                line-height: 50px;
+                .list-childs{
+                    position: absolute;
+                    background-color: rgba(19,112,25,0.98);
+                    left: 0;
+                    margin-top: 2px;
+                    width: 9em;
+                    .list-items {
+                        line-height: 30px;
+                        padding: 0px 19px;
+                        display: none;
+                    }
+                    .list-items:hover {
+                        background-color: rgba(36,142,57,0.97);
+                    }
+                }
             }
         }
 
@@ -125,8 +175,7 @@ header {
                         line-height: 50px;    
                         a {
                             font-size: 24px;
-                            color: white;
-                            text-decoration: none;
+                            
                         }
                 }
             }
@@ -136,20 +185,39 @@ header {
 
 
 main {
+    padding-top: 100px;
     .artical {
-        width: 800px;
+        width: 970px;
+        height: 1800px;
+        background-color: rgba(4,13,13,0.9399999999999999);
         overflow: hidden;
-        .artical-left {
-            height: 400px;
-            width: 50%;
-            background-color: red;
-            float: left;
-        }
-        .artical-right {
-            height: 400px;
-            width: 50%;
-            background-color: green;
-            float: right;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        .artical-description{
+            background-color: rgba(50, 136, 66, 0.28);
+            margin: 20px 0;
+            color: white;
+            .artical-left {
+                height: 400px;
+                width: 50%;
+                // background-color: red;
+                float: left;
+                position: relative;
+                img{
+                    width: 150px;
+                    height: 95px;
+                    float: left;
+                }
+            }
+            .artical-right {
+                height: 400px;
+                width: 50%;
+                background-color: #227a33;
+                float: right;
+                
+            }
         }
     }
 }
