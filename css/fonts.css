@@ -16,6 +16,7 @@ body {
 }
 header {
   position: fixed;
+  z-index: 100;
 }
 header .nav-collapse {
   background-color: #ffffff;
@@ -158,12 +159,11 @@ header .nav-pills .count p span {
 header .nav-pills .count p span a {
   font-size: 24px;
 }
-main {
+.wiki-body {
   padding-top: 100px;
 }
-main .artical {
-  width: 970px;
-  height: 1800px;
+.wiki-body .article {
+  width: 90%;
   background-color: rgba(4, 13, 13, 0.94);
   overflow: hidden;
   padding-left: 35px;
@@ -171,23 +171,26 @@ main .artical {
   margin-left: auto;
   margin-right: auto;
 }
-main .artical .artical-description {
+.wiki-body .article .article-bg {
   background-color: rgba(50, 136, 66, 0.28);
   margin: 20px 0;
   color: white;
 }
-main .artical .artical-description .artical-left {
-  height: 400px;
+.wiki-body .article .article-bg .article-left {
+  position: relative;
   width: 50%;
   float: left;
-  position: relative;
+  border-color: #b6dc7e;
 }
-main .artical .artical-description .artical-left img {
+.wiki-body .article .article-bg .article-left img {
+  position: absolute;
   width: 150px;
   height: 95px;
   float: left;
+  left: 50px;
+  top: 50px;
 }
-main .artical .artical-description .artical-right {
+.wiki-body .article .article-bg .article-right {
   height: 400px;
   width: 50%;
   background-color: #227a33;
