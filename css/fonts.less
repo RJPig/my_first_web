@@ -5,7 +5,7 @@
 }
 ul,li,a {
     list-style-type: none;
-    color: white;
+    color: #e4e4e4;
     text-decoration: none;    
 }
 // 添加第三方字体库
@@ -304,6 +304,76 @@ header {
                         }
                     }
                 }
+            }
+            
+        }
+        .game-art-bg {
+            overflow: hidden;
+            .game-descriptions {
+                margin-top: 20px;
+                padding-right: 12px;
+                width: 50%;
+                box-sizing: border-box;
+                float: left;
+                .game-introduce {
+                    .nav-tabs {
+                        background-color: #227a33;
+                        box-shadow: inset 0 -6px rgba(0,0,0,.15);
+                        border-radius: 4px;
+                        line-height: 2.5em;
+                        position: relative;
+                        .tabs-items {
+                            display: inline-block;
+                            margin-left: 1em;
+                            a {
+                                padding: 10px 15px;
+                                color:#b6dc7e;
+                            }
+                        }
+                        
+                        .tabs-items:hover {
+                            background-color: rgb(16,50,32);
+                            border-radius: 4px 4px 0 0;
+                        }
+                    }
+                    .tab-content {
+                        background-color: #103220;
+                        padding: 1em 0;
+                        box-sizing: border-box;
+                        // visibility: hidden;
+                        .tab-actives {
+                            column-count: 3;
+                            padding: 0 3em;
+                            border-bottom: 1px #227a33 solid;
+                            margin-top: 1em;
+                            .tab-active {
+                                .active-items {
+                                    margin: 5px 0;
+                                    line-height: 1.8;
+                                    list-style-type: disc;
+                                    a {
+                                        color:#b6dc7e;
+                                    }
+                                    img {
+                                        width: 32px;
+                                        height: 36px;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .editing-activity {
+                margin-top: 20px;
+                padding-right: 12px;
+                width: 50%;
+                height: 100px;
+                background-color: blue;
+                box-sizing: border-box;
+                float: left;
             }
         }
     }

@@ -6,7 +6,7 @@ ul,
 li,
 a {
   list-style-type: none;
-  color: white;
+  color: #e4e4e4;
   text-decoration: none;
 }
 @font-face {
@@ -276,4 +276,66 @@ header .nav-pills .count p span a {
 }
 .wiki-body .article .article-bg .article-right .game-news .news-list .news-items .morenews {
   color: #b6dc7e;
+}
+.wiki-body .article .game-art-bg {
+  overflow: hidden;
+}
+.wiki-body .article .game-art-bg .game-descriptions {
+  margin-top: 20px;
+  padding-right: 12px;
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs {
+  background-color: #227a33;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  line-height: 2.5em;
+  position: relative;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items {
+  display: inline-block;
+  margin-left: 1em;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items a {
+  padding: 10px 15px;
+  color: #b6dc7e;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items:hover {
+  background-color: #103220;
+  border-radius: 4px 4px 0 0;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .tab-content {
+  background-color: #103220;
+  padding: 1em 0;
+  box-sizing: border-box;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .tab-content .tab-actives {
+  column-count: 3;
+  padding: 0 3em;
+  border-bottom: 1px #227a33 solid;
+  margin-top: 1em;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .tab-content .tab-actives .tab-active .active-items {
+  margin: 5px 0;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .tab-content .tab-actives .tab-active .active-items a {
+  color: #b6dc7e;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .tab-content .tab-actives .tab-active .active-items img {
+  width: 32px;
+  height: 36px;
+  vertical-align: middle;
+}
+.wiki-body .article .game-art-bg .editing-activity {
+  margin-top: 20px;
+  padding-right: 12px;
+  width: 50%;
+  height: 100px;
+  background-color: blue;
+  box-sizing: border-box;
+  float: left;
 }
