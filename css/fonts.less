@@ -19,7 +19,7 @@ body {
     background-attachment: fixed;
     font-family: "Lantinghei SC","Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
 }
-
+// 顶部导航栏
 header {
     position: fixed;
     z-index: 100;
@@ -201,11 +201,13 @@ header {
         padding-right: 35px;
         margin-left: auto;
         margin-right: auto;
+        // 顶部背景
         .article-bg{
             background-color: rgba(50, 136, 66, 0.28);
             margin: 20px 0;
             color: white;
             overflow: hidden;
+            // 星露谷物语游戏介绍以及作者介绍功能等部分
             .article-left {
                 width: 50%;
                 float: left;
@@ -275,7 +277,7 @@ header {
                     }
                 }
             }
-
+            // 右边游戏里的一些有趣彩蛋之类的部分
             .article-right {
                 width: 50%;
                 float: left;
@@ -307,6 +309,7 @@ header {
             }
             
         }
+        // 游戏具体内容部分
         .game-art-bg {
             overflow: hidden;
             .game-descriptions {
@@ -335,46 +338,120 @@ header {
                             background-color: rgb(16,50,32);
                             border-radius: 4px 4px 0 0;
                         }
-                    }
-                    .tab-content {
-                        background-color: #103220;
-                        padding: 1em 0;
-                        box-sizing: border-box;
-                        // visibility: hidden;
-                        .tab-actives {
-                            column-count: 3;
-                            padding: 0 3em;
-                            border-bottom: 1px #227a33 solid;
-                            margin-top: 1em;
-                            .tab-active {
-                                .active-items {
-                                    margin: 5px 0;
-                                    line-height: 1.8;
-                                    list-style-type: disc;
-                                    a {
-                                        color:#b6dc7e;
-                                    }
-                                    img {
-                                        width: 32px;
-                                        height: 36px;
-                                        vertical-align: middle;
+                        .tab-content {
+                            box-sizing: border-box;
+                            .tab-actives {
+                                // display: none;
+                                background-color: #103220;
+                                column-count: 3;
+                                padding: 0 3em;
+                                border-bottom: 1px #227a33 solid;
+
+                                .tab-active {
+                                    
+                                    .active-items {
+                                        margin: 5px 0;
+                                        line-height: 1.8;
+                                        list-style-type: disc;
+                                        a {
+                                            color:#b6dc7e;
+                                        }
+                                        img {
+                                            width: 32px;
+                                            height: 36px;
+                                            vertical-align: middle;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
+   
                 }
 
             }
+            // 编辑动态部分
             .editing-activity {
                 margin-top: 20px;
                 padding-right: 12px;
                 width: 50%;
-                height: 100px;
-                background-color: blue;
                 box-sizing: border-box;
                 float: left;
+                .editing-title {
+                    background-color: #227a33;
+                    color: #fff;
+                    text-align: left;
+                    padding: .7em 0 .55em 0.35em;
+                    border-radius: 4px;
+                    box-shadow: inset 0 -6px rgba(0,0,0,.15);
+                    .edit-title {
+                        margin-left: 1em;
+                    }
+                }
+                .editing-content {
+                    background-color: #103220;
+                    padding: 0.5em 1.5em 1.5em 0.5em;
+                    border-radius: 0 0 4px 4px;
+                    margin-bottom: 1em;
+                    position: relative;
+                    span,a {
+                        color: #999;
+                        line-height: 17.5px;
+                        font-size: 12px;
+                    }
+                        .user-home-activity {
+                            padding: 10px 0;
+                            .media-content {
+                                display: flex;
+                            }
+
+                            .media-body {
+                                margin-left: 20px;
+                                flex: 1;
+
+                                .user {
+                                    line-height: 17.5px;
+                                    font-size: 12px;
+                                    color: #999;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                    
+                                }
+                                .media-title {
+                                    a {
+                                        color: #b6dc7e;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                    }
+                                }
+
+                            }
+                        }
+                        .media-time-ago {
+                            text-align: right;
+                            .time-ago-h::after {
+                                content: "";
+                                width: 2px;
+                                height: 12px;
+                                display: inline-block;
+                                margin: -1px 3px;
+                                background-color: #999;
+                            }
+                    }
+                }
             }
         }
     }
 }
+// .nav-tabs>.tabs-items:nth-child(1):hover~.tab-content>.tab-actives:nth-child(1),
+// .nav-tabs>.tabs-items:nth-child(2):hover~.tab-content>.tab-actives:nth-child(2),
+// .nav-tabs>.tabs-items:nth-child(3):hover~.tab-content>.tab-actives:nth-child(3),
+// .nav-tabs>.tabs-items:nth-child(4):hover~.tab-content>.tab-actives:nth-child(4),
+// .nav-tabs>.tabs-items:nth-child(5):hover~.tab-content>.tab-actives:nth-child(5),
+// .tabs-items:hover{
+//     ~.tab-content{
+//         .tab-actives{
+//             display: block;
+//         }
+//     }
+// }
