@@ -302,31 +302,56 @@ header .nav-pills .count p span a {
   padding: 10px 15px;
   color: #b6dc7e;
 }
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items:hover {
-  background-color: #103220;
-  border-radius: 4px 4px 0 0;
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items .tab-actives {
+  position: absolute;
+  visibility: hidden;
 }
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tab-content {
-  box-sizing: border-box;
-}
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tab-content .tab-actives {
-  background-color: #103220;
-  column-count: 3;
-  padding: 0 3em;
-  border-bottom: 1px #227a33 solid;
-}
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tab-content .tab-actives .tab-active .active-items {
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items .tab-actives .tab-active .active-items {
   margin: 5px 0;
   line-height: 1.8;
   list-style-type: disc;
 }
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tab-content .tab-actives .tab-active .active-items a {
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items .tab-actives .tab-active .active-items a {
   color: #b6dc7e;
 }
-.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tab-content .tab-actives .tab-active .active-items img {
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items .tab-actives .tab-active .active-items img {
   width: 32px;
   height: 36px;
   vertical-align: middle;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items:hover {
+  background-color: #103220;
+  border-radius: 4px 4px 0 0;
+}
+.wiki-body .article .game-art-bg .game-descriptions .game-introduce .nav-tabs .tabs-items:hover .tab-actives {
+  visibility: visible;
+  border-bottom: 1px #227a33 solid;
+  background-color: #103220;
+  column-count: 3;
+  padding: 0 3em;
+}
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc {
+  margin-top: 22em;
+  margin-bottom: 2em;
+  background-color: #227a33;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+  line-height: 1.8;
+  padding: 2em;
+}
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc {
+  margin: 7.5px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc a,
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc b {
+  font-family: Sloppy-Hand, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  color: #b6dc7e;
+  font-size: 120%;
+}
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc b {
+  font-weight: bold;
 }
 .wiki-body .article .game-art-bg .editing-activity {
   margin-top: 20px;
@@ -376,6 +401,9 @@ header .nav-pills .count p span a {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.wiki-body .article .game-art-bg .editing-activity .editing-content .user-home-activity .media-body .media-title {
+  margin-top: 10px;
+}
 .wiki-body .article .game-art-bg .editing-activity .editing-content .user-home-activity .media-body .media-title a {
   color: #b6dc7e;
   font-size: 18px;
@@ -386,9 +414,9 @@ header .nav-pills .count p span a {
 }
 .wiki-body .article .game-art-bg .editing-activity .editing-content .media-time-ago .time-ago-h::after {
   content: "";
-  width: 2px;
+  width: 1px;
   height: 12px;
   display: inline-block;
-  margin: -1px 3px;
+  margin: -1px 5px;
   background-color: #999;
 }

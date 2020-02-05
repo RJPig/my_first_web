@@ -332,23 +332,11 @@ header {
                                 padding: 10px 15px;
                                 color:#b6dc7e;
                             }
-                        }
-                        
-                        .tabs-items:hover {
-                            background-color: rgb(16,50,32);
-                            border-radius: 4px 4px 0 0;
-                        }
-                        .tab-content {
-                            box-sizing: border-box;
                             .tab-actives {
+                                position: absolute;
                                 // display: none;
-                                background-color: #103220;
-                                column-count: 3;
-                                padding: 0 3em;
-                                border-bottom: 1px #227a33 solid;
-
+                                visibility: hidden;
                                 .tab-active {
-                                    
                                     .active-items {
                                         margin: 5px 0;
                                         line-height: 1.8;
@@ -365,10 +353,45 @@ header {
                                 }
                             }
                         }
+                        
+                        .tabs-items:hover {
+                            background-color: rgb(16,50,32);
+                            border-radius: 4px 4px 0 0;
+                            .tab-actives {
+                                // display: block;
+                                visibility: visible;
+                                border-bottom: 1px #227a33 solid;
+                                background-color: #103220;
+                                column-count: 3;
+                                padding: 0 3em;
+                            }
+                        }
+
                     }
    
                 }
-
+                .wiki-desc {
+                    // position: absolute;
+                    margin-top: 22em;
+                    margin-bottom: 2em;
+                    background-color: #227a33;
+                    box-shadow: inset 0 -6px rgba(0,0,0,.15);
+                    line-height: 1.8;
+                    padding: 2em;
+                    .desc {
+                        margin: 7.5px 0;
+                        text-align: center;
+                        font-size: 16px;
+                        color: #fff;
+                        a,b {
+                            font-family:Sloppy-Hand, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;                            color: #b6dc7e;
+                            font-size:120%;
+                        }
+                        b {
+                            font-weight: bold;
+                        }
+                    }
+                }
             }
             // 编辑动态部分
             .editing-activity {
@@ -418,6 +441,7 @@ header {
                                     
                                 }
                                 .media-title {
+                                    margin-top: 10px;
                                     a {
                                         color: #b6dc7e;
                                         font-size: 18px;
@@ -431,10 +455,10 @@ header {
                             text-align: right;
                             .time-ago-h::after {
                                 content: "";
-                                width: 2px;
+                                width: 1px;
                                 height: 12px;
                                 display: inline-block;
-                                margin: -1px 3px;
+                                margin: -1px 5px;
                                 background-color: #999;
                             }
                     }
@@ -443,15 +467,4 @@ header {
         }
     }
 }
-// .nav-tabs>.tabs-items:nth-child(1):hover~.tab-content>.tab-actives:nth-child(1),
-// .nav-tabs>.tabs-items:nth-child(2):hover~.tab-content>.tab-actives:nth-child(2),
-// .nav-tabs>.tabs-items:nth-child(3):hover~.tab-content>.tab-actives:nth-child(3),
-// .nav-tabs>.tabs-items:nth-child(4):hover~.tab-content>.tab-actives:nth-child(4),
-// .nav-tabs>.tabs-items:nth-child(5):hover~.tab-content>.tab-actives:nth-child(5),
-// .tabs-items:hover{
-//     ~.tab-content{
-//         .tab-actives{
-//             display: block;
-//         }
-//     }
-// }
+
