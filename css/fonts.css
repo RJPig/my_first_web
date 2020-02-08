@@ -8,6 +8,7 @@ a {
   list-style-type: none;
   color: #e4e4e4;
   text-decoration: none;
+  line-height: 1.8;
 }
 @font-face {
   font-family: "Sloppy-Hand";
@@ -335,7 +336,6 @@ header .nav-pills .count p span a {
   margin-bottom: 2em;
   background-color: #227a33;
   box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
-  line-height: 1.8;
   padding: 2em;
 }
 .wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc {
@@ -350,7 +350,7 @@ header .nav-pills .count p span a {
   color: #b6dc7e;
   font-size: 120%;
 }
-.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc a:hover {
+.wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc .hover-color:hover {
   color: #94cb42;
 }
 .wiki-body .article .game-art-bg .game-descriptions .wiki-desc .desc b {
@@ -376,38 +376,87 @@ header .nav-pills .count p span a {
   width: 24px;
   height: 34px;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke {
+.wiki-body .article .game-art-bg .game-descriptions .boke,
+.wiki-body .article .game-art-bg .game-descriptions .links {
   position: relative;
+  margin-bottom: 20px;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-title {
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-title,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-title,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-title,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-title {
   background-color: #227a33;
   box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
   padding: 0.7em 0 0.55em 0.35em;
   border-radius: 4px;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-title span {
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-title span,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-title span,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-title span,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-title span {
   margin-left: 0.75em;
   color: #fff;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content {
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists {
   background-color: #103220;
   border-radius: 0 0 4px 4px;
   margin-bottom: 1em;
   list-style-type: disc;
-  padding: 40px;
+  padding: 0.5em 1.5em 1.5em 0.5em;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .boke-lists a {
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .lists-find,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content .lists-find,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists .lists-find,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists .lists-find {
+  margin-top: 24px;
+  overflow: hidden;
+}
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .lists-find .boke-lists,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content .lists-find .boke-lists,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists .lists-find .boke-lists,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists .lists-find .boke-lists {
+  margin: 0.3em 0 0 1.6em;
+  margin-bottom: 9px;
+}
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .lists-find .boke-lists li,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content .lists-find .boke-lists li,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists .lists-find .boke-lists li,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists .lists-find .boke-lists li {
+  list-style-type: disc;
+}
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .lists-find .boke-lists a,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content .lists-find .boke-lists a,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists .lists-find .boke-lists a,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists .lists-find .boke-lists a {
   font-size: 1.5em;
   color: #888888;
   text-align: center;
 }
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .find-mores {
-  text-align: right;
-  margin-top: 20px;
-}
-.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .find-mores .find-more {
+.wiki-body .article .game-art-bg .game-descriptions .boke .boke-content .lists-find .find-more,
+.wiki-body .article .game-art-bg .game-descriptions .links .boke-content .lists-find .find-more,
+.wiki-body .article .game-art-bg .game-descriptions .boke .links-lists .lists-find .find-more,
+.wiki-body .article .game-art-bg .game-descriptions .links .links-lists .lists-find .find-more {
+  float: right;
   background-color: #227a33;
   padding: 0.5em;
+}
+.wiki-body .article .game-art-bg .game-descriptions .links-items {
+  margin: 0.3em 0 0 1.6em;
+  margin-bottom: 9px;
+}
+.wiki-body .article .game-art-bg .game-descriptions .links-items .links-item {
+  list-style-type: disc;
+  margin: 5px 0;
+}
+.wiki-body .article .game-art-bg .game-descriptions .links-items .links-item .item-href {
+  color: #b6dc7e;
+  font-size: 14px;
+}
+.wiki-body .article .game-art-bg .game-descriptions .links-items .links-item .item-href:hover {
+  color: #94cb42;
 }
 .wiki-body .article .game-art-bg .editing-activity {
   margin-top: 20px;

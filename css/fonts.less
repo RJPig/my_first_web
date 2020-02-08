@@ -7,6 +7,7 @@ ul,li,a {
     list-style-type: none;
     color: #e4e4e4;
     text-decoration: none;    
+    line-height: 1.8;
 }
 // 添加第三方字体库
 @font-face {
@@ -377,7 +378,6 @@ header {
                     margin-bottom: 2em;
                     background-color: #227a33;
                     box-shadow: inset 0 -6px rgba(0,0,0,.15);
-                    line-height: 1.8;
                     padding: 2em;
                     .desc {
                         margin: 7.5px 0;
@@ -388,7 +388,7 @@ header {
                             font-family:Sloppy-Hand, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;                            color: #b6dc7e;
                             font-size:120%;
                         }
-                        a:hover {
+                        .hover-color:hover {
                             color: #94cb42;
                         }
                         b {
@@ -416,9 +416,10 @@ header {
                         height: 34px;
                     }
                 }
-                .boke {
+                .boke,.links{
                     position: relative;
-                    .boke-title {
+                    margin-bottom: 20px;
+                    .boke-title,.links-title {
                         background-color: #227a33;
                         box-shadow: inset 0 -6px rgba(0,0,0,.15);
                         padding: .7em 0 .55em 0.35em;
@@ -428,27 +429,50 @@ header {
                             color: #fff;
                         }
                     }
-                    .boke-content {
+                    .boke-content,.links-lists {
                         background-color: #103220;
                         border-radius: 0 0 4px 4px;
                         margin-bottom: 1em;
                         list-style-type: disc;
-                        padding: 40px;
-                        .boke-lists {
-                            a {
-                                font-size: 1.5em;
-                                color:#888888;
-                                text-align: center;
+                        padding: 0.5em 1.5em 1.5em 0.5em;
+                        .lists-find{
+                            margin-top: 24px;
+                            overflow: hidden;
+                            .boke-lists {
+                                margin: 0.3em 0 0 1.6em;
+                                margin-bottom: 9px;
+                                li {
+                                    list-style-type: disc;
+                                }
+                                a {
+                                    font-size: 1.5em;
+                                    color:#888888;
+                                    text-align: center;
+                                }
                             }
-                        }
-                        .find-mores {
-                            text-align: right;
-                            margin-top: 20px;
+    
                             .find-more{
+                                float: right;
                                 background-color: #227a33;
                                 padding: 0.5em;
                             }
+                        }
 
+                                                
+                    }
+                }
+                .links-items {
+                    margin: 0.3em 0 0 1.6em;
+                    margin-bottom: 9px;
+                    .links-item {
+                        list-style-type: disc;
+                        margin: 5px 0;
+                        .item-href {
+                            color: #b6dc7e;
+                            font-size: 14px;
+                        }
+                        .item-href:hover {
+                            color: #94cb42;
                         }
                     }
                 }
@@ -525,6 +549,8 @@ header {
                 }
             }
         }
+        // 其他维基链接部分
+        .
     }
 }
 
