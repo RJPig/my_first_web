@@ -10,6 +10,17 @@ a {
   text-decoration: none;
   line-height: 1.8;
 }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
 @font-face {
   font-family: "Sloppy-Hand";
   src: url(Sloppy-Hand.otf) format("opentype");
@@ -27,12 +38,12 @@ header {
 header .nav-collapse {
   background-color: #ffffff;
   height: 50px;
-  overflow: hidden;
 }
 header .nav-collapse .left {
   float: left;
 }
 header .nav-collapse .left .logo {
+  height: 50px;
   float: left;
   background-color: #333333;
   padding: 0px 9px;
@@ -524,4 +535,36 @@ header .nav-pills .count p span a {
   display: inline-block;
   margin: -1px 5px;
   background-color: #999;
+}
+.wiki-body .article .other-wikis {
+  margin-top: 20px;
+}
+.wiki-body .article .other-wikis .otw-title {
+  background-color: #227a33;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+  padding: 0.7em 0 0.55em 0.35em;
+  border-radius: 4px;
+}
+.wiki-body .article .other-wikis .otw-title span {
+  margin-left: 0.75em;
+  color: #fff;
+}
+.wiki-body .article .other-wikis .otw-lists {
+  padding: 0.5em 1.5em 1.5em 0.5em;
+  background-color: #103220;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+.wiki-body .article .other-wikis .otw-lists .lists {
+  display: flex;
+  margin-bottom: 9px;
+}
+.wiki-body .article .other-wikis .otw-lists .lists .lists-item {
+  margin: 5px 0;
+}
+@media screen and (max-width: 1120px) {
+  .count {
+    display: none;
+  }
 }
