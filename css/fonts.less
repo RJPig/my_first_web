@@ -333,12 +333,12 @@ header {
                 float: left;
 
                 .game-introduce {
+                    position: relative;
                     .nav-tabs {
                         background-color: #227a33;
                         box-shadow: inset 0 -6px rgba(0,0,0,.15);
                         border-radius: 4px;
                         line-height: 2.5em;
-                        position: relative;
                         .tabs-items {
                             display: inline-block;
                             margin-left: 1em;
@@ -348,8 +348,9 @@ header {
                             }
                             .tab-actives {
                                 position: absolute;
-                                // display: none;
                                 visibility: hidden;
+                                left: 0;
+                                // box-sizing: border-box;
                                 .tab-active {
                                     .active-items {
                                         margin: 5px 0;
@@ -386,7 +387,7 @@ header {
                 }
                 .wiki-desc {
                     // position: absolute;
-                    margin-top: 22em;
+                    margin-top: 17em;
                     margin-bottom: 2em;
                     background-color: #227a33;
                     box-shadow: inset 0 -6px rgba(0,0,0,.15);
@@ -578,7 +579,7 @@ header {
                 padding: 0.5em 1.5em 1.5em 0.5em;
                 background-color: #103220;
                 border-radius: 0 0 4px 4px;
-                margin-bottom: 1em;
+                margin-bottom: 3em;
                 box-sizing: border-box;
                 .lists {
                     display: flex;
@@ -587,10 +588,19 @@ header {
                     // justify-content: space-evenly;
                     .lists-item {
                         margin: 5px 0;
-                        // img {
-                        //     width: 168px;
-                        //     height: 224px;
-                        // }
+                        flex: 1;
+                        .lists-item-content {
+                            text-align: center;
+                            img {
+                                width: 168px;
+                                height: 224px;
+                            }
+    
+                            .item-text {
+                                margin: 10px 0;
+                                font-size: 94%;
+                            }
+                        }
                     }
 
                 }
@@ -598,9 +608,37 @@ header {
         }
     }
 }
-
+// 导航栏
 @media screen and (max-width:1120px) {
     .count {
+        p>span:nth-of-type(2) {
+            display: none;
+        }
+    }
+}
+// 宽度小于等于1029px时使用以下样式
+@media screen and (max-width:1029px) {
+    .count {
+            display: none;
+    }
+}
+ 
+@media screen and (max-width:880px) {
+    .list-pills {
+        li:nth-child(n+7) {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:738px) {
+    .list-pills {
+        li:nth-child(n+6) {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:666px) {
+    .nav-pills,.right,.search {
         display: none;
     }
 }
