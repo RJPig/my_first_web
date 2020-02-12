@@ -578,6 +578,11 @@ header .nav-pills .count p span a {
   margin: 10px 0;
   font-size: 94%;
 }
+.wiki-body .footer {
+  margin-top: 2em;
+  padding: 2em 0;
+  background-color: rgba(8, 28, 43, 0.94);
+}
 @media screen and (max-width: 1120px) {
   .count p > span:nth-of-type(2) {
     display: none;
