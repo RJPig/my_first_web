@@ -8,7 +8,6 @@ a {
   list-style-type: none;
   color: #e4e4e4;
   text-decoration: none;
-  line-height: 1.8;
 }
 .clearfix:before,
 .clearfix:after {
@@ -582,6 +581,56 @@ header .nav-pills .count p span a {
   margin-top: 2em;
   padding: 2em 0;
   background-color: rgba(8, 28, 43, 0.94);
+}
+.wiki-body .footer .container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wiki-body .footer .container .parser-output {
+  font-size: 14px;
+}
+.wiki-body .footer .container .parser-output .parser-lists {
+  padding-left: 2em;
+  margin-bottom: 10px;
+}
+.wiki-body .footer .container .parser-output .parser-lists .lists-item {
+  list-style-type: disc;
+}
+.wiki-body .footer .container .parser-output .parser-lists .lists-item a {
+  color: #b6dc7e;
+}
+.wiki-body .footer .container .parser-output .parser-lists .lists-item a:hover {
+  color: #94cb42;
+}
+.wiki-body .footer .container .siteNotice {
+  margin: 12px 0;
+  display: flex;
+}
+.wiki-body .footer .container .siteNotice .siteitems {
+  flex: 1;
+  color: #888888;
+}
+.wiki-body .footer .container .siteNotice .siteitems a {
+  color: #888888;
+}
+.wiki-body .footer .container .siteNotice .siteitems .sitetitle {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.wiki-body .footer .container .siteNotice .siteitems .sitelists .sitelists-item {
+  font-size: 12px;
+  color: #888888;
+}
+.wiki-body .footer .container .siteNotice .siteitems .sitelists .sitelists-item .item-img {
+  width: 46px;
+  height: 16px;
+  vertical-align: middle;
+}
+.wiki-body .footer .container .siteNotice .siteitems .sitelists .sitelists-item .item-img-big {
+  width: 107px;
+  height: 18px;
+  vertical-align: middle;
 }
 @media screen and (max-width: 1120px) {
   .count p > span:nth-of-type(2) {
